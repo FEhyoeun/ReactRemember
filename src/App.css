@@ -91,9 +91,10 @@
   
   .something-row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 4px auto;
+    margin: 10px auto;
     color: #fff;
     background: linear-gradient(
       90deg,
@@ -103,6 +104,7 @@
     padding: 16px;
     border-radius: 5px;
     width: 90%;
+    height: 300px;
   }
   
   .something-row:nth-child(4n + 1) {
@@ -132,12 +134,13 @@
   .icons {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
+    margin-top: 30px;
   }
   
   .delete-icon {
-    margin-right: 5px;
+    margin-right: 100px;
     color: #fff;
   }
   

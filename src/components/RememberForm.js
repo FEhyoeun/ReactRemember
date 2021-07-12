@@ -29,7 +29,7 @@ function RememberForm(props) {
 
     return (
         <form className="remember-form" onSubmit={handleSubmit}>
-            {props.edit ? (
+            {props.edit ? ( // 수정이면
                 <>
                     <input
                         type="text"
@@ -42,7 +42,7 @@ function RememberForm(props) {
                     />
                     <button className="remember-button">Update something!</button>
                 </>
-            ) :
+            ) : // 그게 아니면(내용 추가일 때는)
                 (
                     <>
                         <input
