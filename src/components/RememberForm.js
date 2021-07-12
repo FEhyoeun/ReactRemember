@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 function RememberForm(props) {
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
     const inputRef = useRef(null);
 
@@ -29,16 +29,36 @@ function RememberForm(props) {
 
     return (
         <form className="remember-form" onSubmit={handleSubmit}>
-            <input
-                type="text"
-                placeholder="Add something to remember"
-                value={input}
-                name="text"
-                className="remember-input"
-                onChange={handleChange}
-                ref={inputRef}
-            />
-            <button className="remember-button">Add something!</button>
+            {props.edit ? (
+                <>
+                    <input
+                        type="text"
+                        placeholder="Update your something"
+                        value={input}
+                        name="text"
+                        className="remember-input"
+                        onChange={handleChange}
+                        ref={inputRef}
+                    />
+                    <button className="remember-button">Update something!</button>
+                </>
+            ) :
+                (
+                    <>
+                        <input
+                            type="text"
+                            placeholder="Add something to remember"
+                            value={input}
+                            name="text"
+                            className="remember-input edit"
+                            onChange={handleChange}
+                            ref={inputRef}
+                        />
+                        <button className="remember-button edit">Add something!</button>
+                    </>
+                )}
+
+
         </form>
     );
 }
