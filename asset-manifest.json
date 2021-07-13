@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ReactRemember/static/css/main.f2b29f62.chunk.css",
+    "main.js": "/ReactRemember/static/js/main.5ccc5e50.chunk.js",
+    "main.js.map": "/ReactRemember/static/js/main.5ccc5e50.chunk.js.map",
+    "runtime-main.js": "/ReactRemember/static/js/runtime-main.a808adae.js",
+    "runtime-main.js.map": "/ReactRemember/static/js/runtime-main.a808adae.js.map",
+    "static/js/2.e4c67165.chunk.js": "/ReactRemember/static/js/2.e4c67165.chunk.js",
+    "static/js/2.e4c67165.chunk.js.map": "/ReactRemember/static/js/2.e4c67165.chunk.js.map",
+    "index.html": "/ReactRemember/index.html",
+    "static/css/main.f2b29f62.chunk.css.map": "/ReactRemember/static/css/main.f2b29f62.chunk.css.map",
+    "static/js/2.e4c67165.chunk.js.LICENSE.txt": "/ReactRemember/static/js/2.e4c67165.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a808adae.js",
+    "static/js/2.e4c67165.chunk.js",
+    "static/css/main.f2b29f62.chunk.css",
+    "static/js/main.5ccc5e50.chunk.js"
+  ]
+}
